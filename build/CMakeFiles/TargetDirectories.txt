@@ -1,0 +1,3 @@
+C:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/build/CMakeFiles/TileTwister.dir
+C:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/build/CMakeFiles/edit_cache.dir
+C:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/build/CMakeFiles/rebuild_cache.dir
