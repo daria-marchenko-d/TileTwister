@@ -15,7 +15,7 @@ Stage 3 (Enhanced Features): Added smooth tile movement animations and save/load
 
 Stage 4 (Testing & Documentation): Conducted comprehensive integration testing to ensure system stability and absence of regression bugs. Prepared complete project documentation and GitHub repository.
 
-####2. Technical Implementation Details
+#### 2. Technical Implementation Details
 
 The implementation strictly followed the initial requirements:
 
@@ -31,7 +31,7 @@ Input Processing: Keyboard-controlled tile movement with immediate visual feedba
 
 Extended Features: Implemented animations, persistent game state via save/load, and experimental special tile variants
 
-####3. Architecture & Development Approach
+#### 3. Architecture & Development Approach
 
 The project employed a modular architecture separating concerns between:
 
@@ -63,7 +63,7 @@ Le projet a été développé suivant une approche itérative structurée en qua
 
 Étape 4 (Tests et documentation) : Réalisation de tests d'intégration complets pour garantir la stabilité du système et l'absence de régressions. Préparation de la documentation complète du projet et du dépôt GitHub.
 
-####2. Détails Techniques d'Implémentation
+#### 2. Détails Techniques d'Implémentation
 
 L'implémentation a strictement respecté les exigences initiales :
 
@@ -79,7 +79,7 @@ Traitement des entrées : Mouvement des tuiles contrôlé par clavier avec retou
 
 Fonctionnalités étendues : Implémentation des animations, persistance de l'état du jeu via sauvegarde/chargement, et variantes expérimentales de tuiles spéciales
 
-####3. Architecture et Approche de Développement
+#### 3. Architecture et Approche de Développement
 
 Le projet a employé une architecture modulaire séparant les responsabilités entre :
 
