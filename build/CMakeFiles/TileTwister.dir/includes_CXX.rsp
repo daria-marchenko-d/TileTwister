@@ -1,1 +1,1 @@
--IC:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/include -I"C:/PROGRA~1/msys64/home/daria/libs/SDL2-2~1.5/X86_64~1/include" -IC:/PROGRA~1/msys64/home/daria/libs/SDL2_T~1.2/X86_64~1/include
+-IC:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/include -I"C:/PROGRA~1/msys64/home/daria/libs/SDL3-D~1.2-M/SDL3-3~1.2/X86_64~1/include" -I"C:/PROGRA~1/msys64/home/daria/libs/SDL3_T~1.2-M/SDL3_T~1.2/X86_64~1/include"

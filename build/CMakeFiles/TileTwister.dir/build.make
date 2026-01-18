@@ -214,9 +214,8 @@ TileTwister.exe: CMakeFiles/TileTwister.dir/src/Tile.cpp.obj
 TileTwister.exe: CMakeFiles/TileTwister.dir/src/Window.cpp.obj
 TileTwister.exe: CMakeFiles/TileTwister.dir/src/main.cpp.obj
 TileTwister.exe: CMakeFiles/TileTwister.dir/build.make
-TileTwister.exe: C:/Program\ Files/msys64/home/daria/libs/SDL2-2.28.5/x86_64-w64-mingw32/lib/libSDL2main.a
-TileTwister.exe: C:/Program\ Files/msys64/home/daria/libs/SDL2-2.28.5/x86_64-w64-mingw32/lib/libSDL2.dll.a
-TileTwister.exe: C:/Program\ Files/msys64/home/daria/libs/SDL2_ttf-2.20.2/x86_64-w64-mingw32/lib/libSDL2_ttf.dll.a
+TileTwister.exe: C:/Program\ Files/msys64/home/daria/libs/SDL3-devel-3.2.2-mingw/SDL3-3.2.2/x86_64-w64-mingw32/lib/libSDL3.dll.a
+TileTwister.exe: C:/Program\ Files/msys64/home/daria/libs/SDL3_ttf-devel-3.2.2-mingw/SDL3_ttf-3.2.2/x86_64-w64-mingw32/lib/libSDL3_ttf.dll.a
 TileTwister.exe: CMakeFiles/TileTwister.dir/linkLibs.rsp
 TileTwister.exe: CMakeFiles/TileTwister.dir/objects1.rsp
 TileTwister.exe: CMakeFiles/TileTwister.dir/link.txt
