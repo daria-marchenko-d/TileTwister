@@ -1,0 +1,25 @@
+# External libraries
+lib/doctest/
+third_party/
+
+# Compilation and build files
+build/
+*.exe
+*.dll
+*.o
+*.obj
+*.out
+
+# SDL files
+SDL3.dll
+SDL3_ttf.dll
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
