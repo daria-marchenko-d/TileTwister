@@ -96,25 +96,45 @@ Le développement a suivi des principes de tests pilotés avec ajout incrémenta
 
 ## Files tree
 TileTwister/
+
 ├── tests/
+
 │   └── test_grid_basic.cpp
+
 ├── include/
+
 │   ├── Constants.hpp
+
 │   ├── Game.hpp
+
 │   ├── GameObject.hpp
+
 │   ├── Grid.hpp
+
 │   ├── InputHandler.hpp
+
 │   ├── Renderer.hpp
+
 │   ├── Tile.hpp
+
 │   └── Window.hpp
+
 ├── src/
+
 │   ├── Game.cpp
+
 │   ├── GameObject.cpp
+
 │   ├── Grid.cpp
+
 │   ├── InputHandler.cpp
+
 │   ├── main.cpp
+
 │   ├── Renderer.cpp
+
 │   ├── Tile.cpp
+
 │   └── Window.cpp
 ├── CMakeLists.txt (or Makefile)
 ├── README.md
