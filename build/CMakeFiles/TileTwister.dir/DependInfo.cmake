@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/src/Game.cpp" "CMakeFiles/TileTwister.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/Game.cpp.obj.d"
-  "C:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/src/GameObject.cpp" "CMakeFiles/TileTwister.dir/src/GameObject.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/GameObject.cpp.obj.d"
-  "C:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/src/Grid.cpp" "CMakeFiles/TileTwister.dir/src/Grid.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/Grid.cpp.obj.d"
-  "C:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/src/InputHandler.cpp" "CMakeFiles/TileTwister.dir/src/InputHandler.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/InputHandler.cpp.obj.d"
-  "C:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/src/Renderer.cpp" "CMakeFiles/TileTwister.dir/src/Renderer.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/Renderer.cpp.obj.d"
-  "C:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/src/Tile.cpp" "CMakeFiles/TileTwister.dir/src/Tile.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/Tile.cpp.obj.d"
-  "C:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/src/Window.cpp" "CMakeFiles/TileTwister.dir/src/Window.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/Window.cpp.obj.d"
-  "C:/Users/daria/Documents/2_anee/c++/tile_twister/TileTwister/src/main.cpp" "CMakeFiles/TileTwister.dir/src/main.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/main.cpp.obj.d"
+  "C:/Users/Mathieu Auger/Documents/Projets 2eme annee/2048/TileTwister/src/Game.cpp" "CMakeFiles/TileTwister.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/Game.cpp.obj.d"
+  "C:/Users/Mathieu Auger/Documents/Projets 2eme annee/2048/TileTwister/src/GameObject.cpp" "CMakeFiles/TileTwister.dir/src/GameObject.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/GameObject.cpp.obj.d"
+  "C:/Users/Mathieu Auger/Documents/Projets 2eme annee/2048/TileTwister/src/Grid.cpp" "CMakeFiles/TileTwister.dir/src/Grid.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/Grid.cpp.obj.d"
+  "C:/Users/Mathieu Auger/Documents/Projets 2eme annee/2048/TileTwister/src/InputHandler.cpp" "CMakeFiles/TileTwister.dir/src/InputHandler.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/InputHandler.cpp.obj.d"
+  "C:/Users/Mathieu Auger/Documents/Projets 2eme annee/2048/TileTwister/src/RendererSDL.cpp" "CMakeFiles/TileTwister.dir/src/RendererSDL.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/RendererSDL.cpp.obj.d"
+  "C:/Users/Mathieu Auger/Documents/Projets 2eme annee/2048/TileTwister/src/Tile.cpp" "CMakeFiles/TileTwister.dir/src/Tile.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/Tile.cpp.obj.d"
+  "C:/Users/Mathieu Auger/Documents/Projets 2eme annee/2048/TileTwister/src/Window.cpp" "CMakeFiles/TileTwister.dir/src/Window.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/Window.cpp.obj.d"
+  "C:/Users/Mathieu Auger/Documents/Projets 2eme annee/2048/TileTwister/src/main.cpp" "CMakeFiles/TileTwister.dir/src/main.cpp.obj" "gcc" "CMakeFiles/TileTwister.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

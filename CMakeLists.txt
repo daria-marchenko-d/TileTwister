@@ -1,27 +1,37 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.20)
 project(TileTwister VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # ===========================================
-# CORRECT ABSOLUTE PATHS (FIXED)
+# SDL3 PATHS
 # ===========================================
-set(SDL2_ROOT "C:/Program Files/msys64/home/daria/libs/SDL2-2.28.5")
-set(SDL2_TTF_ROOT "C:/Program Files/msys64/home/daria/libs/SDL2_ttf-2.20.2")
+set(SDL3_ROOT "${CMAKE_SOURCE_DIR}/SDL3-3.2.28/x86_64-w64-mingw32")
+set(SDL3_INCLUDE_DIR "${SDL3_ROOT}/include")
+set(SDL3_LIB_DIR "${SDL3_ROOT}/lib")
+set(SDL3_BIN_DIR "${SDL3_ROOT}/bin")
 
-set(SDL2_INCLUDE_DIR "${SDL2_ROOT}/x86_64-w64-mingw32/include")
-set(SDL2_TTF_INCLUDE_DIR "${SDL2_TTF_ROOT}/x86_64-w64-mingw32/include")
+# ===========================================
+# VERIFICATION DES FICHIERS SDL3
+# ===========================================
+if(NOT EXISTS "${SDL3_LIB_DIR}/libSDL3.dll.a")
+    message(FATAL_ERROR "libSDL3.dll.a not found in ${SDL3_LIB_DIR}")
+endif()
 
-set(SDL2_LIB_DIR "${SDL2_ROOT}/x86_64-w64-mingw32/lib")
-set(SDL2_TTF_LIB_DIR "${SDL2_TTF_ROOT}/x86_64-w64-mingw32/lib")
+if(NOT EXISTS "${SDL3_BIN_DIR}/SDL3.dll")
+    message(FATAL_ERROR "SDL3.dll not found in ${SDL3_BIN_DIR}")
+endif()
+
+message(STATUS "SDL3 include: ${SDL3_INCLUDE_DIR}")
+message(STATUS "SDL3 lib: ${SDL3_LIB_DIR}/libSDL3.dll.a")
+message(STATUS "SDL3 dll: ${SDL3_BIN_DIR}/SDL3.dll")
 
 # ===========================================
 # INCLUDE DIRECTORIES
 # ===========================================
-include_directories("include")
-include_directories("${SDL2_INCLUDE_DIR}")
-include_directories("${SDL2_TTF_INCLUDE_DIR}")
+include_directories(include)
+include_directories(${SDL3_INCLUDE_DIR})
 
 # ===========================================
 # SOURCE FILES
@@ -29,16 +39,27 @@ include_directories("${SDL2_TTF_INCLUDE_DIR}")
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
 # ===========================================
-# CREATE EXECUTABLE
+# EXECUTABLE
 # ===========================================
 add_executable(TileTwister ${SOURCES})
 
 # ===========================================
-# LINK LIBRARIES
+# SDL3 IMPORTED LIBRARY
 # ===========================================
-target_link_libraries(TileTwister
-    "${SDL2_LIB_DIR}/libSDL2main.a"
-    "${SDL2_LIB_DIR}/libSDL2.dll.a"
-    "${SDL2_TTF_LIB_DIR}/libSDL2_ttf.dll.a"
-    mingw32
+add_library(SDL3 SHARED IMPORTED)
+set_target_properties(SDL3 PROPERTIES
+    IMPORTED_LOCATION "${SDL3_BIN_DIR}/SDL3.dll"
+    IMPORTED_IMPLIB "${SDL3_LIB_DIR}/libSDL3.dll.a"
+    INTERFACE_INCLUDE_DIRECTORIES "${SDL3_INCLUDE_DIR}"
+)
+
+target_link_libraries(TileTwister PRIVATE SDL3)
+
+# ===========================================
+# COPY SDL3.DLL TO BUILD DIRECTORY
+# ===========================================
+configure_file(
+    "${SDL3_BIN_DIR}/SDL3.dll"
+    "${CMAKE_BINARY_DIR}/SDL3.dll"
+    COPYONLY
 )
